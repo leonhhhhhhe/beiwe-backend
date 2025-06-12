@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+source /home/ubuntu/.pyenv/versions/beiwe/bin/activate
 # if you provide a parameter to this script we just blindly run that script via the taskrunner
 # without any extra checks or prompts and then exit with that status code.
 if [ -n "$1" ]; then
