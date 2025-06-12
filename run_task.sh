@@ -4,7 +4,7 @@
 # if you provide a parameter to this script we just blindly run that script via the taskrunner
 # without any extra checks or prompts and then exit with that status code.
 if [ -n "$1" ]; then
-    python -u scripts/taskrunner.py $1 $2 $3 $4 $5 $6 $7 $8 $9
+    python3 -u scripts/taskrunner.py $1 $2 $3 $4 $5 $6 $7 $8 $9
     exit $?  # exit with that status code
 fi
 
@@ -38,10 +38,10 @@ while true; do
     echo
     read -p "Was this the script you wanted to run? (y/n) " yn
     case $yn in
-        [Yy]* ) 
+        [Yy]*) 
             echo "Starting the script..."
             break;;
-        [Nn]* ) 
+        [Nn]*) 
             echo "Exiting..."
             exit;;
         * ) 
@@ -59,7 +59,7 @@ touch $LOG_FILE
 # in the background
 # with output rediredected to a log file
 # and wrapped in the time command to measure the execution time and resource usage
-nohup time -v nice -19 python -u scripts/taskrunner.py $SCRIPT_PARAM >> $LOG_FILE 2>&1 &
+nohup time -v nice -19 python3 -u scripts/taskrunner.py $SCRIPT_PARAM >> $LOG_FILE 2>&1 &
 
 echo
 echo Following output of the log file, press Ctrl+C to stop - will not cancel the script.
