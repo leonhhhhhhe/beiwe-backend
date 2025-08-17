@@ -83,8 +83,8 @@ server instance profile (iam permissions beiwe requires in order to run)
       ],
       "Effect": "Allow",
       "Resource": [
-        "arn:aws:s3:::elasticbeanstalk-*",
-        "arn:aws:s3:::elasticbeanstalk-*/*"
+        "arn:aws-cn:s3:::elasticbeanstalk-*",
+        "arn:aws-cn:s3:::elasticbeanstalk-*/*"
       ]
     },
     {
@@ -95,7 +95,7 @@ server instance profile (iam permissions beiwe requires in order to run)
       ],
       "Effect": "Allow",
       "Resource": [
-        "arn:aws:logs:*:*:log-group:/aws/elasticbeanstalk*"
+        "arn:aws-cn:logs:*:*:log-group:/aws/elasticbeanstalk*"
       ]
     }
   ]
