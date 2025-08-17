@@ -178,8 +178,9 @@ def setup_python():
 
 
 def run_custom_ondeploy_script():
-    with cd(REMOTE_PROJECT_DIR):
-        run(f'bash ./run_task.sh run_custom_ondeploy_script processing >> {LOG_FILE}')
+    pass
+    #with cd(REMOTE_PROJECT_DIR):
+     #   run(f'bash ./run_task.sh run_custom_ondeploy_script processing >> {LOG_FILE}')
 
 
 def setup_celery_worker():
