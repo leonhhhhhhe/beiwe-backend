@@ -6,7 +6,7 @@
             "Effect": "Allow",
             "Action": "s3:*",
             "Resource": [
-                "arn:aws:s3:::%s*"
+                "arn:aws-cn:s3:::%s*"
             ]
         },
         {
