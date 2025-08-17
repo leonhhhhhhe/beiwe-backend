@@ -67,7 +67,7 @@ def s3_require_tls(bucket_name):
                 'Effect': 'Deny',
                 'Principal': '*',
                 'Action': '*',
-                'Resource': f'arn:aws:s3:::{bucket_name}/*',
+                'Resource': f'arn:aws-cn:s3:::{bucket_name}/*',
                 'Condition': {
                     'Bool': {
                         'aws:SecureTransport': 'false'
