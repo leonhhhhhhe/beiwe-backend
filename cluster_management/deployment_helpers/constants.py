@@ -295,21 +295,21 @@ BEIWE_APPLICATION_NAME = get_env(
 
 # EB service role arns
 AWS_EB_SERVICE = get_env(
-    "AWS_EB_SERVICE", "arn:aws:iam::aws:policy/service-role/AWSElasticBeanstalkService"
+    "AWS_EB_SERVICE", "arn:aws-cn:iam::aws:policy/service-role/AWSElasticBeanstalkService"
 )
 AWS_EB_ENHANCED_HEALTH = get_env(
-    "AWS_EB_ENHANCED_HEALTH", "arn:aws:iam::aws:policy/service-role/AWSElasticBeanstalkEnhancedHealth"
+    "AWS_EB_ENHANCED_HEALTH", "arn:aws-cn:iam::aws:policy/service-role/AWSElasticBeanstalkEnhancedHealth"
 )
 
 # EB instance profile arns
 AWS_EB_MULTICONTAINER_DOCKER = get_env(
-    "AWS_EB_MULTICONTAINER_DOCKER", "arn:aws:iam::aws:policy/AWSElasticBeanstalkMulticontainerDocker"
+    "AWS_EB_MULTICONTAINER_DOCKER", "arn:aws-cn:iam::aws:policy/AWSElasticBeanstalkMulticontainerDocker"
 )
 AWS_EB_WEB_TIER = get_env(
-    "AWS_EB_WEB_TIER", "arn:aws:iam::aws:policy/AWSElasticBeanstalkWebTier"
+    "AWS_EB_WEB_TIER", "arn:aws-cn:iam::aws:policy/AWSElasticBeanstalkWebTier"
 )
 AWS_EB_WORKER_TIER = get_env(
-    "AWS_EB_WORKER_TIER", "arn:aws:iam::aws:policy/AWSElasticBeanstalkWorkerTier"
+    "AWS_EB_WORKER_TIER", "arn:aws-cn:iam::aws:policy/AWSElasticBeanstalkWorkerTier"
 )
 
 
